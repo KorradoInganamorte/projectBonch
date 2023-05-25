@@ -1,0 +1,92 @@
+.reference-container
+    display: flex
+    margin: 0 auto
+    height: min-content
+    
+.left-wrapper
+    background-color: #000
+    margin-right: 1px
+    display: flex
+    justify-content: center
+    width: 30vw
+    padding: 5rem 0
+
+
+.left-wrapper-container
+    display: flex
+    flex-direction: column
+    padding: 0 0 0 1rem
+
+.reference-left-a
+    color: #fff
+    font-size: 1.4rem
+    font-weight: 400
+    margin-bottom: .5rem
+
+.display-flex
+    display: flex
+
+.display-flex-btn
+    display: flex
+    align-items: center
+
+/* Dropdown Button */
+.dropbtn 
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    cursor: pointer
+    width: .8rem
+    height: .8rem
+    @include respond(verticalphone)
+        display: none
+
+
+.dropdown-p
+    color: #fff
+    font-size: 1.4rem
+    font-weight: 400
+    margin-right: .5rem
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown 
+    position: relative
+    display: inline-block
+    margin-bottom: .5rem
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content 
+    min-width: 160px
+
+/* Links inside the dropdown */
+.dropdown-a 
+    color: $color-D9D9D9-gray
+    font-size: 1.2rem
+    font-weight: 400
+    padding: .2rem 1rem
+    display: block
+
+.right-wrapper
+    background-color: #000
+    color: #fff
+    display: flex
+    padding: 5rem
+    width: 70vw
+
+.right-wrapper-container
+    &__status-hidden
+        display: none
+    &__status-active
+        display: block
+    &__h4
+        font-size: 2rem
+        font-weight: 500
+        margin-bottom: 2.5rem
+    &__container
+        font-size: 1.8rem
+    &__container-text-regular
+        font-weight: 400
+    &__container-text-medium
+        font-weight: 500

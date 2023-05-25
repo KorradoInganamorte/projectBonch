@@ -1,0 +1,189 @@
+.header
+    display: flex
+    align-items: center
+    background-color: #000
+    height: 8.5rem
+    margin-bottom: .1rem
+
+.header-container
+    display: flex
+    align-items: center
+    margin: 0 5rem
+    width: 100%
+    justify-content: space-between
+    @include respond(horizontalphone)
+        margin: 0 2rem
+
+/* Logo */
+
+.logo-img
+    margin-right: 9.7rem
+    width: 10rem
+    height: 2.8rem
+    @include respond(horizontalphone)
+        margin-right: 4.5rem
+
+.logo-p
+    margin-right: 9.7rem
+    font-size: 2.8rem
+    font-weight: 500
+    color: #fff
+    @include respond(horizontalphone)
+        margin-right: 4.5rem
+    
+
+/*      */
+
+
+
+/* Search*/
+
+.form-search
+    position: relative
+    display: flex
+    align-items: center
+    width: 34.5rem
+    height: 2rem
+    margin-right: 57.5rem
+    @include respond(monitor)
+        margin-right: 34.5rem
+    @include respond(laptop)
+        margin-right: 36.5em
+        height: 2.5rem
+    @include respond(tablet)
+        margin-right: 24.5rem
+    @include respond(horizontalphone)
+        margin-right: 10.5rem
+    @include respond(screen)
+        margin-right: 45.5rem
+
+input, button 
+    border: none
+    outline: none
+    border-radius: 1rem
+
+input 
+    width: 100%
+    height: 100%
+    background: #121212
+    padding: 0 0 0 1.5rem
+
+.input-search
+    color: #fff
+    font-size: 1.2rem
+
+button 
+    width: 1.6rem
+    height: 1.6rem
+    background: none
+    cursor: pointer
+    padding: 0
+
+.btn-search
+    position: absolute
+    left: 32.2rem
+    width: 1.6rem
+    height: 1.6rem
+    @include respond(monitor)
+        width: 1.33rem
+        height: 1.33rem
+    @include respond(laptop)
+        width: 1.6rem
+        height: 1.6rem
+    @include respond(tablet)
+        width: 2rem
+        height: 2rem
+    @include respond(horizontalphone)
+        width: 2.66rem
+        height: 2.66rem
+        left: 31.2rem
+    @include respond(horizontalphone)
+        display: none
+    @include respond(screen)
+        width: 1.15rem
+        height: 1.15rem
+        
+/*      */
+
+
+ 
+/* Навигация */
+
+.container-navigation
+    display: flex
+    align-items: center
+
+.navigation
+    text-decoration: none
+    color: $color-AEAEAE-grey
+    margin-right: .5rem
+    font-size: 1.4rem
+    font-weight: 300
+    transition: all .1s
+    white-space: nowrap
+    @include respond(tablet)
+        font-size: 1.8rem
+        min-width: 6.875rem
+    &__icon-heart
+        margin-right: 1.5rem
+        width: 1.6rem
+        height: 1.6rem
+        @include respond(tablet)
+            width: 1.8rem
+            height: 1.8rem
+    &__icon-cart
+        margin-right: 1.5rem
+        width: 1.6rem
+        height: 1.6rem
+        @include respond(tablet)
+            width: 1.8rem
+            height: 1.8rem
+
+        
+/*          */
+
+
+
+/* Кнопка-профиль */
+
+.btn-profile
+    width: 4.3rem
+    height: 4.3rem
+    transition: .2s
+    @include respond(monitor)
+        width: 3.58rem
+        height: 3.58rem
+    @include respond(laptop)
+        width: 4.3rem
+        height: 4.3rem
+    @include respond(tablet)
+        width: 5.375rem
+        height: 4rem
+    @include respond(horizontalphone)
+        width: 5.5rem
+        height: 4rem
+    @include respond(verticalphone)
+        width: 8.75rem
+        height: 5.75rem
+    @include respond(screen)
+        width: 3.07rem
+        height: 3.07rem
+
+.btn-profile:hover
+    border-bottom: 1px solid $color-blue
+
+/*      */
+
+
+
+/* Анимация-навигация и фикс */
+
+.anim-navigation
+    display: flex
+    align-items: center
+    
+.navigation_cart:hover
+    color: $color-blue
+
+.navigation:hover
+    color: $color-blue

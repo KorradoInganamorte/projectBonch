@@ -1,0 +1,177 @@
+.site
+    background-color: #000
+    
+.container-site
+    width: min-content
+    margin: 0 auto
+    padding: 0 0 2rem 0
+    @include respond(horizontalphone)
+        padding: 0 2rem 2rem 2rem
+        margin: 0 auto
+
+.site-grid-card
+    display: grid
+    grid-template-columns: repeat(3, 231px)
+    grid-template-rows: repeat(2,123px)
+    gap: 1.5rem
+    justify-items: center
+    align-items: center
+    /* @include respond(tablet)
+        grid-template-columns: 230px 308px 230px
+        grid-template-rows: minmax(123px, 164px) 123px */
+    @include respond(horizontalphone)
+        grid-template-columns: repeat(3, 180px)
+        grid-template-rows: repeat(2, 90px)
+        gap: 3rem
+    @include respond(verticalphone)
+        grid-template-columns: repeat(3, 120px)
+        grid-template-rows: repeat(2, 60px)
+        gap: 3rem
+
+@media (min-width: 1441px)
+    .site-grid-card
+        display: none
+    .wrapper-img
+        margin-right: 1.5rem
+    .wrapper-img:last-child 
+        margin-right: 0
+
+.site-a
+    display: block
+    color: #fff
+    font-size: 1.8rem
+    font-weight: 400
+    padding-top: 3.5rem
+    margin-bottom: 5.8rem
+    margin-right: 5rem
+    @include respond(horizontalphone)
+        font-size: 3rem
+
+.site-a:last-child
+    margin-right: 0
+    font-weight: 500
+
+.site-a:hover
+    color: #fff
+    
+
+.site-card-s
+    display: flex
+    justify-content: space-between
+    margin-bottom: 2.5rem
+    @include respond(laptop)
+        display: none
+
+    
+.wrapper-img
+    position: relative
+    width: 230px
+    height: 123px
+    @include respond(horizontalphone)
+        width: 30rem
+        height: 15rem
+    
+
+.card-img
+    opacity: 0.8
+
+.static-img
+    @include respond(horizontalphone)
+        width: 30rem
+        height: 15rem
+
+.card-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 2rem
+    font-weight: 500
+    color: #fff
+    white-space: nowrap
+    @include respond(tablet)
+        font-size: 2.5rem
+    @include respond(screen)
+        font-size: 1.5rem
+    
+
+.card-m
+    display: flex
+    justify-content: space-between
+    padding-bottom: 5.5rem
+    @include respond(laptop)
+        display: none
+.wrapper-img-m
+    position: relative
+
+.card-img-m
+    opacity: 0.8
+
+.card-text-m
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 2rem
+    font-weight: 500
+    color: #fff
+
+
+
+.carousel
+    grid-column: 2 / 3
+    grid-row: 1 / 2
+
+.carousel-inner
+    width: 231px
+    height: 123px
+    border-radius: 1rem
+    /* @include respond(tablet)
+        width: 38.5rem
+        height: 20.5rem */
+    @include respond(horizontalphone)
+        width: 180px
+        height: 90px
+    @include respond(verticalphone)
+        width: 120px
+        height: 60px
+
+.carousel-img
+    width: 231px
+    height: 123px
+    border-radius: 1rem
+    /* @include respond(tablet)
+        width: 38.5rem
+        height: 20.5rem */
+    @include respond(horizontalphone)
+        width: 180px
+        height: 90px
+    @include respond(verticalphone)
+        width: 120px
+        height: 60px
+
+.carousel-h5
+    font-size: 2rem
+    @include respond(tablet)
+        font-size: 2.5rem
+    @include respond(screen)
+        font-size: 1.5rem
+
+.carousel-caption
+    padding-bottom: 1.25rem
+    @include respond(laptop)
+        padding-bottom: 0.45rem
+    @include respond(tablet)
+        padding-bottom: 0.65rem
+    @include respond(horizontalphone)
+        padding-bottom: 1.25rem
+
+.carousel-indicators
+    @include respond(laptop)
+        margin-bottom: 0
+    @include respond(verticalphone)
+        margin-bottom: -1rem
+
+.carousel-control-next, .carousel-control-prev 
+    top: 50%
+

@@ -1,0 +1,191 @@
+.profile
+    background-color: #000
+
+.profile-container
+    margin: 0 auto
+    padding: 4.5rem 3rem
+
+.info
+    display: flex
+
+.info-row
+    display: flex
+
+.info-about
+    display: flex
+    width: 33.2rem
+    height: 11.6rem
+    border: .1rem solid $color-767676-gray
+    border-radius: 1rem
+    padding: 1.5rem
+    margin-right: 6rem
+    @include respond(horizontalphone)
+        padding: 1.5rem 1.5rem 1.5rem 0
+    @include respond(horizontalphone)
+        padding: 1.5rem
+
+
+    &__nick
+        font-size: 2rem
+        font-weight: 500
+        color: #fff
+        margin-bottom: .5rem
+    &__icon
+        width: 1.6rem
+    &__location
+        font-size: 1.4rem
+        font-weight: 300
+        color: #fff
+
+
+.btn-profile78px
+    margin-right: 2rem
+    @include respond(monitor)
+        width: 6.5rem
+        height: 6.5rem
+    @include respond(laptop)
+        width: 7.8rem
+        height: 7.8rem
+    @include respond(tablet)
+        width: 9.75rem
+    @include respond(horizontalphone)
+        width: 11.75rem
+        height: 7rem
+        margin-right: 0
+    @include respond(verticalphone)
+        display: none
+    @include respond(screen)
+        width: 5.57rem
+        height: 5.57rem
+
+.profile-circle
+    @include respond(verticalphone)
+        width: 7.6rem
+        height: 7.6rem
+        border-radius: 50%
+        border: 1px solid $color-blue
+        margin-right: 2rem
+
+@media (min-width: 900px)
+    .profile-circle
+        display: none
+    
+
+
+.info-help
+    display: flex
+    &__img
+        margin-right: .3rem
+        @include respond(monitor)
+            width: 1.6rem
+            height: 1.6rem
+    &__a
+        font-size: 1.4rem
+        font-weight: 300
+        color: #fff
+    &__modal
+        font-size: 1.4rem
+        font-weight: 300
+        color: #fff
+
+.info-help__modal:hover
+    color: $color-blue
+
+.info-help-row
+    display: flex
+    align-items: center
+    margin-bottom: 2.5rem
+
+.info-help-column
+    margin-right: 5rem
+
+.info-help-column:last-child
+      margin-right: 0
+
+.info-help-row:nth-last-child(1)
+    margin-bottom: 0
+
+// setting Модальное окно 
+
+.modal-location
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 6rem
+    border-radius: 5px
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3)
+    z-index: 10
+    width: 42rem
+    height: 31rem
+    background-color: $color-323232-gray
+    transition: .5s all
+
+.modal-img
+    position: relative
+    left: 50%
+    transform: translate(-50%, -20%)
+    width: 12.8rem
+
+.modal-p
+    position: relative
+    left: 50%
+    transform: translate(-45%, -100%)
+    font-weight: 400
+    font-size: 2rem
+    color: #fff
+
+.modal-btn
+    text-align: center
+
+.modal-dropdown-p
+    color: #fff
+    font-size: 1.6rem
+    font-weight: 300
+
+.modal-dropdown-button
+    display: inline-block
+    position: relative
+    left: 50%
+    transform: translate(-45%, -10%)
+    border: .1rem solid #fff
+    width: 27.5rem
+    height: 3rem
+    border-radius: .5rem
+    @include respond(verticalphone)
+        height: 2.8rem
+
+.modal-dropdown-owner-position
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+.item-list
+    color: #fff
+    font-weight: 300
+    font-size: 1.2rem
+    padding: .3rem 0
+
+.img-list
+    @include respond(verticalphone)
+        display: none
+
+
+// Продолжить с выбраным регионом
+
+.continion-new-region
+    position: relative
+    left: 50%
+    transform: translate(-50%, 10%)
+    color: #000
+    font-weight: 500
+    font-size: 2rem
+    background-color: $color-blue
+    width: 35rem
+    height: 3.5rem
+    border-radius: .5rem
+
+.db-list-position
+    position: relative
+    left: 50%
+    transform: translate(-45%, 0%)
