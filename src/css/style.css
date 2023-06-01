@@ -975,6 +975,7 @@ button {
 
 .site {
   background-color: #000;
+  height: 100vh;
 }
 
 .container-site {
@@ -1232,6 +1233,7 @@ button {
 
 .profile {
   background-color: #000;
+  height: 100vh;
 }
 
 .profile-container {
@@ -1628,8 +1630,7 @@ button {
 .reference-container {
   display: flex;
   margin: 0 auto;
-  height: -moz-min-content;
-  height: min-content;
+  height: 100vh;
 }
 
 .left-wrapper {
@@ -1738,7 +1739,7 @@ button {
 
 .setting {
   background-color: #000;
-  height: 66.7rem;
+  height: 100vh;
 }
 
 .setting-container {
@@ -1848,6 +1849,7 @@ button {
 
 .favourite {
   background-color: #000;
+  height: 100vh;
 }
 
 .favourite-container {
